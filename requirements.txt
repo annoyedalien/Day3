@@ -1,0 +1,6 @@
+azure-mgmt-datafactory
+azure-identity
+azure-mgmt-resource
+azure-mgmt-storage
+python-dotenv
+azure-storage-blob
