@@ -1,6 +1,7 @@
-# Azure Storage Account and Blob Container Setup Script
+# Day 3 DevOps challenge
 
 This script automates the creation and configuration of an Azure Storage Account and Blob Container, including enabling public access and running an additional script (`adf.py`).
+The goal is to create a data factory that invokes request to sportsdata.io players info
 
 ## Prerequisites
 
@@ -16,7 +17,11 @@ This script automates the creation and configuration of an Azure Storage Account
     git clone https://github.com/annoyedalien/Day3.git
     cd repository
     ```
-
+2. Create a virtual environment
+   ```sh
+   source -m venv (your venv)
+   python (your venv)\bin\activate
+   
 2. Install the required Python packages:
     ```sh
     pip install -r requirements.txt
