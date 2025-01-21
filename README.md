@@ -13,7 +13,7 @@ This script automates the creation and configuration of an Azure Storage Account
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/username/repository.git
+    git clone https://github.com/annoyedalien/Day3.git
     cd repository
     ```
 
