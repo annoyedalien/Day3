@@ -10,6 +10,7 @@ subscription_id = os.getenv('AZURE_SUBSCRIPTION_ID')
 resource_group_name = os.getenv('RESOURCE_GROUP_NAME')
 data_factory_name = os.getenv('DATA_FACTORY_NAME')
 rest_api_url = os.getenv('REST_API_URL')
+container_name = os.getenv('CONTAINER_NAME')
 ls_rest_name = os.getenv('LS_REST_NAME')
 ls_blob_name = os.getenv('LS_BLOB_NAME')
 subscription_key = os.getenv('SUBSCRIPTION_KEY')
@@ -85,7 +86,7 @@ blob_dataset_properties = {
             "location": {
                 "type": "AzureBlobStorageLocation",
                 "fileName": "player.json",
-                "container": "playerdata",
+                "container": container_name,
             }
         },
         "schema": {}
