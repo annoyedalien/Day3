@@ -3,7 +3,7 @@
 NBA Players Profile stats
 
 This script automates the creation and configuration of an Azure Storage Account and Blob Container, including enabling public access and running an additional script (`adf.py`).
-This also creates an Azure Data factory where we pull the information from sportsapi.io the data is then transformed removing details not required and then pass it on to a storage container.
+This also creates an Azure Data factory where we pull the information from sportsdata.io the data is then transformed removing details not required and then pass it on to a storage container.
 
 
 
