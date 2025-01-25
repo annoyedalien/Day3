@@ -23,8 +23,8 @@ This also creates an Azure Data factory where we pull the information from sport
     ```
 2. Create a virtual environment and activate
    ```sh
-   source -m venv (your venv)
-   python (your venv)\bin\activate
+   python -m venv (your venv)
+   source (your venv)\bin\activate
    
 2. Install the required Python packages:
     ```sh
