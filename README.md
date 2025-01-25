@@ -76,4 +76,5 @@ This also creates an Azure Data factory where we pull the information from sport
 - **adf.py** contains the creation of azure data factory together with its linked services,datasets and pipelines
 - **config.py** contains the properties of the linked services,datasets and pipelines.
 
+Detailed Guide: https://30daysdevopschallenge.hashnode.dev/30-days-devops-challenge-nba-player-stats
 
