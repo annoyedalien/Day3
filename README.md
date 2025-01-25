@@ -68,7 +68,7 @@ The goal is to create a data factory that invokes request to sportsdata.io playe
 - **Environment Variables**: Loads configuration from a `.env` file using the `dotenv` package.
 - **Subprocess**: Runs an additional script (`adf.py`) after setting up the storage account and container.
 
-##adf.py and config.py
+## adf.py and config.py
 - **adf.py** contains the creation of azure data factory together with its linked services,datasets and pipelines
 - **config.py** contains the properties of the linked services,datasets and pipelines.
 
