@@ -1,7 +1,11 @@
-# Day 3 DevOps challenge
+# Week 1 - Day 3 DevOpschallenge
+
+NBA Players Profile stats
 
 This script automates the creation and configuration of an Azure Storage Account and Blob Container, including enabling public access and running an additional script (`adf.py`).
-The goal is to create a data factory that invokes request to sportsdata.io players info
+This also creates an Azure Data factory where we pull the information from sportsapi.io the data is then transformed removing details not required and then pass it on to a storage container.
+
+
 
 ## Prerequisites
 
@@ -14,10 +18,10 @@ The goal is to create a data factory that invokes request to sportsdata.io playe
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/annoyedalien/Day3.git
-    cd repository
+    git clone https://github.com/annoyedalien/week1-day3.git
+    cd week1-day3
     ```
-2. Create a virtual environment
+2. Create a virtual environment and activate
    ```sh
    source -m venv (your venv)
    python (your venv)\bin\activate
@@ -45,7 +49,7 @@ The goal is to create a data factory that invokes request to sportsdata.io playe
 
 1. Run the script:
     ```sh
-    main.py
+    python3 main.py
     ```
 
 2. The script will:
@@ -53,12 +57,12 @@ The goal is to create a data factory that invokes request to sportsdata.io playe
     - Check if the specified storage account name is available and create the storage account if it doesn't exist.
     - Enable public access on the storage account.
     - Create a blob container with anonymous access if it doesn't exist.
-    - Run the `adf.py` script.
-    - adf.py will create data factory,linked services,data sets and pipelines
-    - config.py contains the properties of the resources to be created by adf.py
+    - It will run the `adf.py` script as a subprocess.
+    - `adf.py` will create data factory,linked services,data sets and pipelines
+    - `config.py` contains the properties of the resources to be created by adf.py
 
-3. Run the pipeline in datafactory studio
-    - check the contents sent on the blob storage.
+3. Launch Data Factory Studio in Azure and Run the pipeline.
+    - Navigate into the storage account, container and check the blob received from data factory
 
 ## Script Details
 
@@ -72,7 +76,4 @@ The goal is to create a data factory that invokes request to sportsdata.io playe
 - **adf.py** contains the creation of azure data factory together with its linked services,datasets and pipelines
 - **config.py** contains the properties of the linked services,datasets and pipelines.
 
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request with your changes.
 
